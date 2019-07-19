@@ -10,7 +10,7 @@ sap.ui.define([
           var sValue1 = this.getView().getModel().getProperty("/summe/value1");
           var sValue2 = this.getView().getModel().getProperty("/summe/value2");
           var sSumme = sValue1 + sValue2;
-          var sMsg = oBundle.getText("ergebnisMsg", [sValue1], [sValue2], [sSumme]);
+          var sMsg = oBundle.getText("ergebnisMsg", [sValue1], [this.getView().getModel().getProperty("/summe/value2")], [sSumme]);
           // show message
           MessageToast.show(sMsg);
        }
