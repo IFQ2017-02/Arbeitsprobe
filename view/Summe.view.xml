@@ -1,0 +1,24 @@
+<mvc:View
+   controllerName="HTS.IT.FIAE.ITQ.controller.Summe"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Panel
+      headerText="{i18n>SummeTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto" >
+      <content>
+         <Input
+            value="{/summe/value1}"
+            valueLiveUpdate="true"
+            width="60%"/>
+         <Input
+            value="{/summe/value2}"
+            valueLiveUpdate="true"
+            width="60%"/>
+         <Button
+            text="{i18n>rechneButtonText}"
+            press=".onRechne"
+            class="sapUiSmallMarginEnd"/>
+      </content>
+   </Panel>
+</mvc:View>

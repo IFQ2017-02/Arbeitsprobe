@@ -9,6 +9,7 @@
 			<pages>
 				<Page title="{i18n>homePageTitle}">
 					<content>
+						<mvc:XMLView viewName="HTS.IT.FIAE.ITQ.view.Summe"/>
 						<mvc:XMLView viewName="HTS.IT.FIAE.ITQ.view.List"/>
 					</content>
 				</Page>
