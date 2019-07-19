@@ -4,11 +4,13 @@ sap.ui.define([
  ], function (Controller, MessageToast) {
     "use strict";
     return Controller.extend("HTS.IT.FIAE.ITQ.controller.HelloPanel", {
-       onShowHello : function () {
+       onRechne : function () {
           // read msg from i18n model
           var oBundle = this.getView().getModel("i18n").getResourceBundle();
-          var sRecipient = this.getView().getModel().getProperty("/summe/value1") + this.getView().getModel().getProperty("/summe/value2");
-          var sMsg = oBundle.getText("ergebnisMsg", [sRecipient]);
+          var sValue1 = this.getView().getModel().getProperty("/summe/value1");
+          var sValue2 = this.getView().getModel().getProperty("/summe/value2");
+          var sSumme = sValue1 + sValue2;
+          var sMsg = oBundle.getText("ergebnisMsg", [sValue1], [sValue2], [sSumme]);
           // show message
           MessageToast.show(sMsg);
        }

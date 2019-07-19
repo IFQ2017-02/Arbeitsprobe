@@ -3,7 +3,7 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
    <Panel
-      headerText="{i18n>SummeTitle}"
+      headerText="{i18n>summeTitle}"
       class="sapUiResponsiveMargin"
       width="auto" >
       <content>
