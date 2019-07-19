@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <mvc:View
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
@@ -6,10 +7,10 @@
       headerText="{i18n>listTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
-      items="{list>/Schueler}" >
+      items="{liste>/Schueler}" >
       <items>
          <ObjectListItem
-            title="Test"/>
+            title="{liste>SchülerName}"/>
       </items>
    </List>
 </mvc:View>
