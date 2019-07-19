@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <mvc:View
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
-   <>
    <List
       headerText="{i18n>listTitle}"
       class="sapUiResponsiveMargin"
@@ -9,7 +9,7 @@
       items="{liste>/Schueler}" >
       <items>
          <ObjectListItem
-            title="{liste>SchuelerName}"/>
+            title="{liste>SchülerName}"/>
       </items>
    </List>
 </mvc:View>
