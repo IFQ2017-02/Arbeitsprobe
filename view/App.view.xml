@@ -4,7 +4,7 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
-	<Shell>
+	<Shell backgroundColor="#CCCCCC" backgroundOpacity="0.5" logo="logo.png">
 		<App>
 			<pages>
 				<Page title="{i18n>homePageTitle}">
